@@ -8,7 +8,7 @@ from PIL import Image
 
 
 def get_depth_model(device):
-    depth_model = torch.hub.load("yvanyin/metric3d", "metric3d_vit_giant2", pretrain=True)
+    depth_model = torch.hub.load("yvanyin/metric3d:main", "metric3d_vit_giant2", pretrain=True)
     return depth_model.to(device)
 
 
